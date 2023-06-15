@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row" style="margin: 10px; display: flex; justify-content:  space-between;">
+        <h2>Movie List </h2>
+
+        {% for movie in movie_list %}
+            <div class="card" style="margin:0 auto;  height: 380px; padding-top: 10px; padding-bottom: 10px; margin-top: 6px; width: 280px; ">
+                    <img class="card-img-top" src="{{movie.image_link}}" alt="Card image" style="width:100%; height: 200px;">
+                    <div class="card-body">
+                        <h4 class="card-title">{{movie.title}}</h4>
+                        <p class="card-text" style="height: 40px; overflow: hidden;">{{movie.description}}</p>
+                        <p>{{movie.created_at}}</p>
+                        <a href="{{movie.video_link}}" class="stretched-link"  target="_blank"></a>
+                    </div>
+            </div>
+            
+            <br>
+
+
+        {% endfor %}
+
+    </div>
+{% endblock %}
+
+
+
+
+
+

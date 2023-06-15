@@ -1,0 +1,23 @@
+body{
+    margin: 0 auto;
+}
+#ul_header {
+    background: #323333;
+    height: 60px;
+    display: flex;
+    align-items: center;
+   justify-content: flex-end;
+
+
+}
+
+#ul_header li {
+   color: rgb(236, 229, 229);
+   display: inline;
+   margin-right: 20px;
+}
+
+.link-a {
+    color: rgb(239, 231, 231);
+    text-decoration: none;
+}
